@@ -1,0 +1,14 @@
+
+.contenHome {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+  inline-size: 100vw;
+  block-size: 90vh;
+  border: 1px solid black;  
+}
+.homPage {
+  margin-inline-start: 1rem;
+}
+
+

@@ -1,0 +1,11 @@
+.form {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  margin-top: 15px;
+  margin-inline-end: 15px;
+ }
+
+ .form button {
+  margin-inline-end: 1rem;
+ }

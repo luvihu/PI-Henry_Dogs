@@ -1,0 +1,54 @@
+ 
+ .contentDetail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem;
+  border: 0.5px dashed green;
+ }
+ .detail {
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  gap: 3rem;
+  align-items: center;
+  inline-size: 70rem;
+  block-size: 30rem;
+  border: 0.5px dashed green;
+ }
+ .contentMap {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+ }
+ .contentMap img {
+  inline-size: 30rem;
+  block-size: 25rem;
+  vertical-align: middle;
+  border-radius: 0.25rem;
+ }
+ .dataMap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+  border: 0.5px dashed green;
+ }
+ .dataMap p {
+  font-size: 1.2rem;
+  color: blueviolet;
+ }
+ .contentBtn {
+  display: flex;
+  justify-content: end;
+  inline-size: 70rem;
+  border: 0.5px dashed pink;
+ }
+ .contentBtn button {
+  font-size: 1rem;
+  font-weight: bold;
+  border: 0.5px solid green;
+  color: green;
+ }
+ 

@@ -1,0 +1,25 @@
+.content {
+  display: flex;
+  justify-content: center;
+}
+
+.navContent{
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-start;
+  gap: 3rem;
+  inline-size: 90vw;
+  block-size: 6vh;
+  padding: 15px;
+  margin-top: 15px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+.homeForm {
+  display: flex;
+  justify-content: space-around;
+  inline-size: 10rem;
+  block-size: 1.5rem;
+  border: 1px solid red;
+  gap: 1rem;
+}

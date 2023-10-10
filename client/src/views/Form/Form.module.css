@@ -1,0 +1,92 @@
+.create {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  inline-size: 100vw;
+  block-size: 90vh;
+  border: 1px solid black;
+}
+.create h1 {
+padding: 0.5rem;
+border: 1px solid blue;
+}
+.btnTop {
+  display: flex;
+  justify-content: end;
+  inline-size: 85vw;
+  border: 1px solid pink;
+}
+.btnTop button {
+  color: blue;
+  font-size: 1rem;
+  inline-size: 7rem;
+  block-size: 2rem;
+  border-radius: 0.5rem;
+}
+.createMm {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  inline-size: 80vw;
+  block-size: 70vh;
+
+  border: 1px solid red;
+}
+.createMm input {
+  inline-size: 7rem;
+}
+/* .createMm input:focus {
+  border-color: green;
+} */
+.createMm label {
+  font-size: 1.5rem;
+}
+.contentHeight{
+  display: flex;
+  gap: 2rem;
+  border: 1px solid green;
+}
+.contentWeight{
+  display: flex;
+  gap: 2.3rem;
+  border: 1px solid pink;
+}
+.life {
+  display: flex;
+  gap: 1.6rem;
+  border: 1px solid black;
+}
+.button {
+  display: flex;
+  justify-content: center;
+  inline-size: 80vw;
+  border: 1px solid pink;
+}
+.button button {
+  color: blue;
+  font-size: 1.2rem;
+  inline-size: 7rem;
+  block-size: 2rem;
+  border-radius: 0.5rem;
+}
+.errors {
+  font-size: 0.7rem;
+  color: red;
+}
+.image input {
+  inline-size: 30rem;
+}
+.contentTemp {
+ color: blue;
+ 
+}
+.contentSelecTemp {
+  display: flex;
+  gap: 0.6rem;
+  inline-size: 40rem;
+  block-size: 30rem;
+  flex-wrap: wrap;
+border: 1px solid blue;
+
+}
