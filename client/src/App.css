@@ -1,0 +1,15 @@
+
+.app {
+  align-items: center; 
+   text-align: center;
+   background-image: url('./components/img/istockphoto-489553794-1024x1024-modif2.jpg');
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center center;
+   block-size: 100vh;
+   overflow: auto;
+   inline-size: 100vw;
+   display: flex;
+   flex-direction: column;
+   opacity: 0.8;
+}

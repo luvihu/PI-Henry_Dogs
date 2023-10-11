@@ -4,20 +4,10 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 0.5rem;
+  gap: 0.2rem;
   justify-content: space-around;
-  border: 1px solid green;
   inline-size: 100vw;
-  block-size: 85vh;
+  block-size: 88vh;
   
 }
 
-.button button {
-  font-size: 15px;
-  color:rgba(3, 4, 71);
-  font-weight: bold;
-}
-.button button:hover {
-  transform: scale(1.2);
-  
-}

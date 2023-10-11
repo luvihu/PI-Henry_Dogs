@@ -8,46 +8,42 @@ import { dogGetName } from '../../redux/actions.js';
 const Search = ()=> {
 const dispatch = useDispatch();
 
- const [input, setInput ] = useState({
-  name: ''
- });
+const [input, setInput ] = useState("");
+ 
+ const handleSearch = (event)=> {
+  setInput(event.target.value);
+ }
+ 
 
- const onSearch = (event)=> {
-   setInput({
-    name: event.target.value
-   });
-   
- };
-
- const onSubmit = (event)=> {
+ const handlerSubmit = (event)=> {
   event.preventDefault();
 
-  const name = input.name;
-  if(!name) {
-    return alert('Por favor ingrese la raza a buscar');
-  }else {
-    dispatch(dogGetName(name));
+  if(!input.length){
+    return alert ('Ingresa un nombre para buscar')
+  } else {
+    dispatch(dogGetName(input));
+    setInput('')
   }
+};
   
- };
 
   return  (
 
-    <div className={style.search} >
-      <input 
-      id="search" 
-      name="search"
-      type="search"
-      value={input.name} 
-      onChange={onSearch} 
-      placeholder='search...' />
+  <div className={style.search} >
 
-       <button 
-       type="submit"
-       onClick={onSubmit}
-       >Search</button>
+    <form action="name" onSubmit={handlerSubmit}>
+       <input 
+        id="search" 
+        name="search"
+        type="search"
+        value={input} 
+        onChange={handleSearch} 
+        placeholder='search...' />
+
+       <button type="submit">Search</button>
+    </form>
            
-    </div>
+  </div>
   )
 };
  export default Search;

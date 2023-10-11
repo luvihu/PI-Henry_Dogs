@@ -14,6 +14,7 @@ import {
 } from './actions-types.js';
 import axios from 'axios';
 
+
 export const dogsGet = ()=>{ 
     return async function(dispatch) {
     try {
@@ -31,14 +32,15 @@ export const dogsGet = ()=>{
 export const dogGetName = (name)=> {
   return async function(dispatch) {
     try {
-      const infName = (await axios.get(`http://localhost:3001/dogs/?name=${name}`)).data;
+      const {data} = await axios.get(`http://localhost:3001/dogs/?name=${name}`);
+              
         return dispatch({
         type: GET_DOG_NAME, 
-        payload: infName 
+        payload: data 
       })
       
     } catch (error) {
-      console.log(error.message)
+      alert (`No existe dog con nombre ${name}`);
     }
   }
 };
@@ -46,6 +48,8 @@ export const dogById = (id)=> {
   return async function(dispatch) {
     try {
       const dataId = (await axios.get(`http://localhost:3001/dogs/${id}`)).data;
+
+      if(!dataId.length) throw Error('No existe perro con ese ID');
        return dispatch({
         type: GET_DOG_ID,
         payload: dataId

@@ -5,15 +5,23 @@ const getDogAll = async (req,res)=> {
   const { name } = req.query;
   try {
     if(name){
-      const dogByName = await searchByName(name);
+      const dogByName = await searchByName(name)
       res.status(200).json(dogByName);
+      
     }
     else{
       const getDog = await searchAllDogs();
-      res.status(200).json(getDog);
+      return res.status(200).json(getDog);
     } 
   } catch (error) {
-    res.status(400).json({error: error.message});
+    let status;
+    if (error.message.startsWith("There")) {
+      status=404;
+      res.status(status).json({ error: error.message });
+    }else{
+      status = 500
+      res.status(status).json({ error: error.message });
+    }
   }
 };
 
@@ -25,7 +33,7 @@ const dogById = async (req, res)=> {
   return res.status(200).json(dogId);
       
   } catch (error) {
-    res.status(500).json({error: error.message});
+    return res.status(500).json({error: error.message});
   }
 };
 
@@ -47,10 +55,10 @@ const postDog = async (req, res)=> {
     validationParamt(info);
 
     const createDog = await createDogController({image, name, minHeight, maxHeight, minWeight, maxWeight, minLifeSpan, maxLifeSpan, Temperaments});
-    res.status(201).json(createDog);
+    return res.status(201).json(createDog);
 
   } catch (error) {
-    res.status(404).json({error: error.message});
+    return res.status(404).json({error: error.message});
   }
 };
 
@@ -58,10 +66,10 @@ const putDog = async (req, res)=> {
   try {
     const { Temperaments } = req.body;
     const dogPut = await dogTempSelect(Temperaments);
-    res.status(200).json(dogPut);
+    return res.status(200).json(dogPut);
 
   } catch (error) {
-    res.status(400).json({error: error.message});
+    return res.status(400).json({error: error.message});
   }
 }
 

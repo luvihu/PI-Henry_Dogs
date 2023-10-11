@@ -4,11 +4,13 @@
   flex-direction: row;
   justify-content: center;
   inline-size: 18rem;
-  block-size: 15.5rem;
+  block-size: 16rem;
   text-align: center;
   gap: 0.5rem;
-  border: 1px solid red;
-   
+  border: 1px dashed #2b1383;
+  border-radius: 0.5rem;
+  background-color: rgba(132, 168, 223, 0.938);
+  filter: brightness(1.1) contrast(1.1);
 
 }
 .card img {
@@ -16,14 +18,18 @@
   block-size: 10rem;
   vertical-align: middle;
   border-radius: 0.25rem;
-}
+  margin-block-start: 0.5rem;
+  }
 
 .hCont h4 {
-  color: green
+  color: rgb(3, 46, 3);
+  font-size: 20px;
 
 }
+
 .hCont h6 {
- border: 0.5px dashed green;
+ 
  border-radius: 50%;
  margin-top: 0.5rem;
+ color: black;
 }

@@ -70,7 +70,7 @@ const Sider = ()=>{
     
     <div className={style.form}>
       <div>
-       <label htmlFor="temp">Temperaments</label>
+       <label htmlFor="temp">Temperaments: </label>
        
        <select id="temp"onChange={handlerFiltTemp} value={init.temp}>
         <option value="All">All</option>
@@ -85,7 +85,7 @@ const Sider = ()=>{
       </div>
 
       <div>
-        <label htmlFor="order">Order</label>
+        <label htmlFor="order">Order: </label>
         <select id="order" onChange={handlerOrder} value={init.order}>
           <option name='All' value="All">All</option>
           <option  value="A-Z">A-Z</option>
@@ -96,7 +96,7 @@ const Sider = ()=>{
       </div>
 
       <div>
-        <label htmlFor="dbApi">Breeds</label>
+        <label htmlFor="dbApi">Breeds: </label>
         <select id="dbApi" onChange={handlerBreed} value={init.dbApi}>
         <option name='All' value="All">All</option>
         <option value="created-breeds">Created breeds</option>

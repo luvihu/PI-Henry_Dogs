@@ -1,92 +1,175 @@
 .create {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  align-items: start;
   inline-size: 100vw;
   block-size: 90vh;
-  border: 1px solid black;
+  padding-inline-start: 3rem;
+  
+}
+.create form {
+  border: 2px solid rgb(58, 39, 3);
+  border-radius: 0.5rem;
 }
 .create h1 {
 padding: 0.5rem;
-border: 1px solid blue;
+border: 1px solid #9a84e2d2;
+background-color: #9a84e267;
+border-radius: 0.5rem;
+margin-block-start: 0;
 }
+.name {
+  display: flex;
+  justify-content: start;
+  margin-block-start: 1rem;
+}
+
 .btnTop {
   display: flex;
   justify-content: end;
   inline-size: 85vw;
-  border: 1px solid pink;
-}
+  }
+
 .btnTop button {
-  color: blue;
-  font-size: 1rem;
-  inline-size: 7rem;
-  block-size: 2rem;
+  font-size: 16px;
+  color:rgb(61, 40, 12);
+  font-weight: bold;
   border-radius: 0.5rem;
+  margin-inline-end: 1rem;
+  inline-size: 6.5rem;
+  block-size: 2.5rem;
+  background-color: rgb(214, 180, 135);
 }
+.btnTop button:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
 .createMm {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
-  inline-size: 80vw;
+  gap: 1rem;
+  inline-size: 50vw;
   block-size: 70vh;
-
-  border: 1px solid red;
+  
 }
 .createMm input {
   inline-size: 7rem;
+  block-size: 2rem;
+  border: 1px solid #2b03ae;
+  border-radius: 0px 7px 7px 0px;
+  box-shadow: inset 0 0 10px #8e73e6;
+  outline: none;
+  padding-left: 1rem;
 }
-/* .createMm input:focus {
-  border-color: green;
-} */
+
 .createMm label {
-  font-size: 1.5rem;
+  color:rgb(238, 133, 73);
+  font-weight: bold;
+  font-size: 1.25rem;
+  text-shadow: 2px 2px 2px rgba(17, 17, 17, 0.8);
 }
 .contentHeight{
   display: flex;
-  gap: 2rem;
-  border: 1px solid green;
+  gap: 2.1rem;
+  inline-size: 45vw;
 }
 .contentWeight{
   display: flex;
-  gap: 2.3rem;
-  border: 1px solid pink;
+  gap: 2.4rem;
+  inline-size: 45vw;
+ 
 }
 .life {
   display: flex;
   gap: 1.6rem;
-  border: 1px solid black;
+  inline-size: 47vw;
+  
 }
 .button {
   display: flex;
   justify-content: center;
-  inline-size: 80vw;
-  border: 1px solid pink;
+  inline-size: 50vw;
+  
 }
 .button button {
-  color: blue;
-  font-size: 1.2rem;
+  color: rgb(9, 58, 33);
+  font-size: 1.5rem;
   inline-size: 7rem;
-  block-size: 2rem;
+  block-size: 2.3rem;
+  font-weight: bold;
   border-radius: 0.5rem;
+  background-color: aquamarine;
+}
+.button button:hover {
+  transform: scale(1.1);
+  background-color: rgb(10, 87, 61);
+  color: rgb(203, 236, 219);
+  cursor: pointer;
 }
 .errors {
-  font-size: 0.7rem;
-  color: red;
+  font-size: 0.9rem;
+  color: rgb(250, 243, 243);
+  text-shadow: 2px 2px 2px rgba(90, 8, 8, 0.8);
 }
 .image input {
   inline-size: 30rem;
 }
+.image {
+  display: flex;
+  justify-content: start;
+  
+}
 .contentTemp {
- color: blue;
+  display: flex;
+  gap: 0.5rem;
+  inline-size: 45vw;
+  
  
 }
 .contentSelecTemp {
   display: flex;
   gap: 0.6rem;
-  inline-size: 40rem;
+  inline-size: 35rem;
   block-size: 30rem;
   flex-wrap: wrap;
-border: 1px solid blue;
 
 }
+.name input{
+  inline-size: 20rem;
+}
+
+.contentSelecTemp button {
+  color: rgb(22, 6, 112);
+  font-size: 1rem;
+  inline-size: 7rem;
+  block-size: 2.5rem;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  background-color: rgb(216, 204, 185);
+}
+.contentSelecTemp button:hover {
+  background-color: rgb(132, 214, 152);
+  color: black;
+  cursor: pointer;
+}
+.imgCarpet {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1rem;
+  inline-size: 95vw;
+  block-size: 90vh;
+ 
+}
+
+.imgCarpet img {
+  inline-size: 35vw;
+  block-size: 70vh;
+  vertical-align: middle;
+  border-radius: 0.5rem;
+  margin-block-start: 0.5rem;
+  padding-inline-end: 1rem;
+  padding-block-end: 0.5rem;
+}
+

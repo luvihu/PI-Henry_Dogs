@@ -12,6 +12,7 @@ import {
   RESET
   } from './actions-types.js';
   
+  
 
 const initialState = {
   dogs:[],
@@ -35,9 +36,9 @@ const rootReducer = (state=initialState, action)=> {
      case GET_DOG_NAME:
      return {
       ...state,
-      dogs: action.payload, 
-      dogsFiltOrder: action.payload
-
+      dogs: action.payload.length,
+      
+     
      };
      case GET_DOG_ID:
      return {

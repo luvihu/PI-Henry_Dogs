@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react';
 import { dogAllTemperament } from '../../redux/actions.js';
 import { dogPost } from '../../redux/actions.js';
 import validate from '../../components/utils/validate.jsx';
+import img from "../../components/img/pexels-chevanon-photography.jpg";
 
 
 const Form = ()=> {
@@ -124,11 +125,14 @@ const Form = ()=> {
 
 
   return (
-  <div className={style.create}>
-    <div className={style.btnTop}><Link to='/home'><button>Return Home</button></Link></div>
+<div className={style.create}>
+  <div className={style.btnTop}><Link to='/home'><button>Return Home</button></Link></div>
     
 
       <h1>Create new dog breed</h1>
+  <div className={style.imgCarpet}>
+    
+      
     
     <form action="" onSubmit={handlerCreate}>
      <div className={style.createMm}>
@@ -215,7 +219,11 @@ const Form = ()=> {
 
       </div>
     </form>
+    
+    <img src={img} alt='image-dog' />
+    
   </div>
+</div>
   )
 };
 

@@ -2,13 +2,13 @@
 .contenHome {
   display: flex;
   flex-direction: column;
-  margin-top: 5px;
+  margin-top: 1px;
   inline-size: 100vw;
   block-size: 90vh;
-  border: 1px solid black;  
+  overflow-x: hidden;  
 }
 .homPage {
-  margin-inline-start: 1rem;
+  margin-inline-start: 0.5rem;
 }
 
 

@@ -1,6 +1,9 @@
 .content {
   display: flex;
   justify-content: center;
+  inline-size: 100vw;
+  block-size: 8vh;
+  backdrop-filter: blur(5px);
 }
 
 .navContent{
@@ -8,18 +11,29 @@
   flex-direction: row;
   justify-content:flex-start;
   gap: 3rem;
-  inline-size: 90vw;
+  inline-size: 95vw;
   block-size: 6vh;
   padding: 15px;
-  margin-top: 15px;
+  margin-top: 10px;
   border-radius: 5px;
-  border: 1px solid black;
+  
 }
+
 .homeForm {
+  color: rgb(179, 238, 124);
+  font-weight: bold;
+  font-size: 22px;
+  text-shadow: 2px 2px 2px rgba(11, 11, 11, 0.8);
+}
+.homeForm:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.homeLink {
   display: flex;
   justify-content: space-around;
-  inline-size: 10rem;
-  block-size: 1.5rem;
-  border: 1px solid red;
+  align-items: center;
   gap: 1rem;
+  block-size: 1.7rem;
+  inline-size: 15rem;
 }
