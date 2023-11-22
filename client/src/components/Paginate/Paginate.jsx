@@ -10,13 +10,13 @@ const Paginate = ({prevChange, nextChange, pages, pageTotal})=> {
       <div className={style.button}>
         <button
          onClick={prevChange} 
-         >Prev</button>
+         >◀</button>
 
          <span>Page {pages} of {pageTotal}</span>
           
         <button
          onClick={nextChange}
-        >Next</button>
+        >▶</button>
       </div>
     
   )

@@ -1,43 +1,40 @@
 .create {
   display: flex;
   flex-direction: column;
-  align-items: start;
-  inline-size: 100vw;
+  align-items: center;
+  inline-size: 98vw;
   block-size: 90vh;
-  padding-inline-start: 3rem;
-  
+     
 }
-.create form {
-  border: 2px solid rgb(58, 39, 3);
-  border-radius: 0.5rem;
-}
-.create h1 {
-padding: 0.5rem;
-border: 1px solid #9a84e2d2;
-background-color: #9a84e267;
-border-radius: 0.5rem;
-margin-block-start: 0;
-}
-.name {
+.imgCarpet {
   display: flex;
-  justify-content: start;
-  margin-block-start: 1rem;
-}
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  inline-size: 80vw;
+  }
 
 .btnTop {
   display: flex;
-  justify-content: end;
-  inline-size: 85vw;
+  justify-content: space-between;
+  inline-size: 70vw;
+  margin-block-start: 2rem;
+  
   }
-
+  .btnTop h1{
+    color: rgb(70, 8, 129);
+    text-shadow: 5px 5px 5px rgba(95, 80, 182, 0.8);
+  }
 .btnTop button {
-  font-size: 16px;
+  font-size: 15px;
   color:rgb(61, 40, 12);
   font-weight: bold;
   border-radius: 0.5rem;
   margin-inline-end: 1rem;
-  inline-size: 6.5rem;
-  block-size: 2.5rem;
+  inline-size: 8rem;
+  block-size: 2.1rem;
+  margin-block-start: 1rem;
+  margin-block-end: 0.5rem;
   background-color: rgb(214, 180, 135);
 }
 .btnTop button:hover {
@@ -49,127 +46,156 @@ margin-block-start: 0;
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  inline-size: 50vw;
-  block-size: 70vh;
+  inline-size: 70vw;
+  block-size: 75vh;
+  border: 1px dashed rgba(73, 76, 3, 0.22);
+  backdrop-filter: blur(8px);
+  background-color: rgba(235, 239, 109, 0.22);
+  border-radius: 4px;
+
   
 }
 .createMm input {
   inline-size: 7rem;
   block-size: 2rem;
-  border: 1px solid #2b03ae;
+  border: 1px solid rgb(3, 46, 3);
   border-radius: 0px 7px 7px 0px;
-  box-shadow: inset 0 0 10px #8e73e6;
+  background-color: rgba(48, 150, 124, 0.598);
   outline: none;
   padding-left: 1rem;
 }
 
 .createMm label {
-  color:rgb(238, 133, 73);
+  color: rgb(3, 46, 3);
   font-weight: bold;
-  font-size: 1.25rem;
-  text-shadow: 2px 2px 2px rgba(17, 17, 17, 0.8);
+  font-size: 1.3rem;
+  text-shadow: 2px 2px 2px rgba(48, 150, 124, 0.8);
+}
+.name {
+  display: flex;
+  justify-content: start;
+  margin-block-start: 1rem;
+  margin-inline-start: 1rem;
+  gap: 1rem;
+   
 }
 .contentHeight{
   display: flex;
-  gap: 2.1rem;
-  inline-size: 45vw;
+  gap: 4rem;
+  inline-size: 55rem;
+  margin-inline-start: 1rem;
+    
+  }
+.contentHeight input {
+  inline-size: 9rem;
 }
 .contentWeight{
   display: flex;
-  gap: 2.4rem;
-  inline-size: 45vw;
- 
+  gap: 4rem;
+  inline-size: 65vw;
+  margin-inline-start: 1rem;
+  
+   
+}
+.contentWeight input {
+  inline-size: 9rem;
 }
 .life {
   display: flex;
-  gap: 1.6rem;
-  inline-size: 47vw;
+  gap: 3.5rem;
+  inline-size: 65vw;
+  margin-inline-start: 1rem;
   
 }
+.life input {
+  inline-size: 8rem;
+}
+
 .button {
   display: flex;
-  justify-content: center;
-  inline-size: 50vw;
-  
+  justify-content: end;
+  align-items: end;
+  inline-size: 17vw;
+  block-size: 7.8rem;
+   
 }
 .button button {
   color: rgb(9, 58, 33);
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   inline-size: 7rem;
   block-size: 2.3rem;
   font-weight: bold;
   border-radius: 0.5rem;
   background-color: aquamarine;
+ 
 }
 .button button:hover {
   transform: scale(1.1);
-  background-color: rgb(10, 87, 61);
-  color: rgb(203, 236, 219);
+  background-color: rgb(16, 90, 65);
+  color: #bab138;;
   cursor: pointer;
 }
 .errors {
   font-size: 0.9rem;
-  color: rgb(250, 243, 243);
-  text-shadow: 2px 2px 2px rgba(90, 8, 8, 0.8);
+  color: rgb(31, 11, 96);
+  
 }
 .image input {
-  inline-size: 30rem;
+  inline-size: 30vw;
 }
 .image {
   display: flex;
   justify-content: start;
-  
+  margin-inline-start: 1rem;
+   
 }
 .contentTemp {
   display: flex;
-  gap: 0.5rem;
-  inline-size: 45vw;
-  
- 
+  padding: 0.8rem;
+  align-items: center;
+  gap: 5px;
+  inline-size: 70vw;
+  block-size: 30vh;
 }
+.contentOption {
+  background-color: rgb(87, 215, 173); 
+  font-weight: bold;
+}   
 .contentSelecTemp {
   display: flex;
   gap: 0.6rem;
-  inline-size: 35rem;
-  block-size: 30rem;
+  inline-size: 30vw;
+  block-size: 6rem;
   flex-wrap: wrap;
-
+  padding: 0.5rem;
+  margin-block-start: 0.5rem;
+  border: 1px solid rgb(165, 155, 42);
+  border-radius: 3px;
+   
 }
 .name input{
-  inline-size: 20rem;
+  inline-size: 32vw;
 }
 
-.contentSelecTemp button {
-  color: rgb(22, 6, 112);
-  font-size: 1rem;
-  inline-size: 7rem;
-  block-size: 2.5rem;
-  font-weight: bold;
-  border-radius: 0.5rem;
-  background-color: rgb(216, 204, 185);
-}
-.contentSelecTemp button:hover {
-  background-color: rgb(132, 214, 152);
-  color: black;
-  cursor: pointer;
-}
-.imgCarpet {
+.selectedTemp {
+  padding: 0.5rem;
+  background-color: #a19a3c;
+  border-radius: 0.2rem;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 1rem;
-  inline-size: 95vw;
-  block-size: 90vh;
+  align-items: center;
+  block-size: 1.5rem;
+  inline-size: auto;
+  font-weight: bold;
  
 }
-
-.imgCarpet img {
-  inline-size: 35vw;
-  block-size: 70vh;
-  vertical-align: middle;
-  border-radius: 0.5rem;
-  margin-block-start: 0.5rem;
-  padding-inline-end: 1rem;
-  padding-block-end: 0.5rem;
+.selectedTemp button {
+  margin-right: -1px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  color: #470b03;
 }
+
+
+
 

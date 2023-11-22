@@ -1,39 +1,41 @@
 .landing {
   display: flex;
   flex-direction: column;
-}
+  padding-block-start: 2rem;
+  margin-inline-start: 2rem;
+  margin-block-start: 2rem;
+  gap: 2rem;
+ }
 
-.contentImg img {
-  inline-size: 42vw;
-  block-size: 60vh;
-  vertical-align: middle;
-  border-radius: 0.5rem;
- 
-}
 .landing h1{
- font-size: 53px;
+ font-size: 65px;
+ color: rgb(70, 8, 129);
  margin-block-end: 2rem;
  margin-block-start: 2rem;
- text-shadow: 5px 8px 5px rgba(190, 231, 195, 0.8);
+ text-shadow: 5px 8px 5px rgba(95, 80, 182, 0.8);
 }
 .contentP h2 {
 display: flex;
 justify-content: center;
 align-items: center;
 margin-block-start: 0;
-inline-size: 40rem;
+inline-size: 42rem;
 block-size: 24rem;
-backdrop-filter: blur(5px);
 border-radius: 0.5rem;
-color: rgb(169, 240, 216);
+color: rgb(7, 42, 5);
+filter: brightness(1.4) contrast(1.1);
+line-height: 1.5;
+font-size: 25px;
 
 }
 .contentNav {
   display: flex;
-  inline-size: 90vw;
-  block-size: 3rem;
-  justify-content: end;
- 
+  inline-size: 50vw;
+  block-size: 5rem;
+  justify-content: center;
+  align-items: center;
+  margin-block-start: 2rem;
+   
 }
 .contentNav button {
   font-size: 19px;
@@ -41,9 +43,9 @@ color: rgb(169, 240, 216);
   font-weight: bold;
   border-radius: 0.5rem;
   margin-inline-end: 1rem;
-  inline-size: 6.5rem;
+  inline-size: 7.5rem;
   block-size: 2.5rem;
-  background-color: rgb(168, 125, 69);
+  background-color: rgb(214, 180, 135);
 
 }
 .contentNav button:hover {
@@ -54,10 +56,10 @@ color: rgb(169, 240, 216);
 }
 .contImgH2{
   display: flex;
-  justify-content: center;
-  flex-direction: row;
+  justify-content: left;
   align-items: center;
-  gap: 1rem;
-  inline-size: 90vw;
-  block-size: 70vh
-}
+  inline-size: 50vw;
+  block-size: 40vh;
+  margin-inline-start: 1rem;
+  backdrop-filter: blur(7px);
+ }

@@ -5,10 +5,7 @@ import { dogsGet } from '../../redux/actions.js';
 import PropTypes from "prop-types";
 import style from './Cards.module.css'
 
-
 const Cards = ({dogs})=> {
-
-  
   const dispatch = useDispatch();
 
   useEffect(()=> {

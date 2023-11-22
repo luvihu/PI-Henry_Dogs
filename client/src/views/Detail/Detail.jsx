@@ -46,7 +46,7 @@ return (
 
         <h3>Life span: {dg.life_span}</h3>
         
-        <p>TEMPERAMENTS: {Array.isArray(dg.temperaments)
+        <p>TEMPERAMENTS: {Array.isArray(dg.Temperaments)
                 ? dg.Temperaments.map((t)=> t.name).join(",")
                 : dg.Temperaments }</p>
       </div>
@@ -62,3 +62,5 @@ return (
 };
 
 export default Detail;
+
+

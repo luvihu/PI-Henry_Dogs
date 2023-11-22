@@ -9,24 +9,15 @@ import usePage from '../../components/utils/usePage.jsx';
 const Home = ()=> {
   
   const {changeNext, changePrev, paginate, count, totPagine} = usePage();
-  // const dogAll = useSelector((state)=> state.dogs)
-  
-  // const [breed, setBreed] = useState([]);
-  
-  // useEffect(()=> {
-  //   setBreed(dogAll)
-  // },[dogAll])
-
+ 
   return (
     <div className={style.contenHome}>
        <Sider/>  
+       <Cards dogs={paginate}/>
        <div className={style.homPage}>
        <Paginate prevChange={changePrev} nextChange={changeNext} pages={count} pageTotal={totPagine}
         />
         </div> 
-      
-        <Cards dogs={paginate}/>
-     
     </div>
   )
 };

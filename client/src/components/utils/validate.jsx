@@ -4,7 +4,7 @@ export default function validate(initial) {
   let validateError = {};
 
   const regexName = /^[A-Za-zÑñÁáÉéÍíÓóÚú\s]+$/;
-  const regexURL = /(http(s?):)([/|.|\w|\s|-])*\.(?:jpg|gif|png)/g;
+  
   const regexNumber = /^[1-9]\d*$/;
   
   if(!initial.name) {
@@ -16,15 +16,7 @@ export default function validate(initial) {
   } else if(initial.name.length < 4) {
     validateError.name = 'The name must be more than 3 characters'}
     
- //
-  
-  if (!regexURL.test(initial.image)){
-    validateError.image = "Invalid image url";
-  } else if(!initial.image){
-    validateError.image = 'Image is required';
-  }
-  //
-
+ 
   if (initial.Temperaments.length === 0){
     validateError.Temperaments = "Min Temperaments allowed 1";
   } else if (initial.Temperaments.length > 8){

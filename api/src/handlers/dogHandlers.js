@@ -1,5 +1,5 @@
-const validationParamt = require('../utils/validation');
-const { searchAllDogs, searchByName, getDogId, createDogController, dogTempSelect } = require('../controllers/dogControllers')
+// const validationParamt = require('../utils/validation');
+const { searchAllDogs, searchByName, getDogId, createDogController } = require('../controllers/dogControllers')
 
 const getDogAll = async (req,res)=> {
   const { name } = req.query;
@@ -51,8 +51,9 @@ const postDog = async (req, res)=> {
       Temperaments
     } = req.body;
 
-    const info = { image, name, minHeight, maxHeight, minWeight, maxWeight, minLifeSpan, maxLifeSpan, Temperaments };
-    validationParamt(info);
+    // const info = { image, name, minHeight, maxHeight, minWeight, maxWeight, minLifeSpan, maxLifeSpan, Temperaments };
+    // validationParamt(info);
+    
 
     const createDog = await createDogController({image, name, minHeight, maxHeight, minWeight, maxWeight, minLifeSpan, maxLifeSpan, Temperaments});
     return res.status(201).json(createDog);
@@ -62,20 +63,11 @@ const postDog = async (req, res)=> {
   }
 };
 
-const putDog = async (req, res)=> {
-  try {
-    const { Temperaments } = req.body;
-    const dogPut = await dogTempSelect(Temperaments);
-    return res.status(200).json(dogPut);
 
-  } catch (error) {
-    return res.status(400).json({error: error.message});
-  }
-}
 
 module.exports = {
   getDogAll,
   dogById,
   postDog,
-  putDog
+  
 }

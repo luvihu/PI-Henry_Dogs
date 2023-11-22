@@ -64,6 +64,7 @@ const Sider = ()=>{
       order: 'All',
       dbApi: 'All'
     })
+   
   };
 
   return (
@@ -103,8 +104,9 @@ const Sider = ()=>{
         <option value="api-breeds">Api breeds</option>
         </select>
       </div>
-
-      <button onClick={resetFilt}>Reset</button>
+    
+      <button onClick={resetFilt}>Reset Filter</button>
+    
 
     </div>
   )

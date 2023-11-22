@@ -74,20 +74,29 @@ export const dogAllTemperament = ()=> {
     }
   }
 };
-export const dogPost = (dog)=>{ 
+export function dogPost(payload) { 
   return async function(dispatch) {
   try {
-   const { data } = await axios.post('http://localhost:3001/dogs',dog);
-   return dispatch({
+   const response  = await axios.post('http://localhost:3001/dogs',payload);
+
+   if(response.status === 201){
+    dispatch({
       type: POST_DOG, 
-      payload: data
+      payload: response.data
     })
-    
+     alert('Succesfully created')}
+  
   } catch (error) {
-    console.log(error.message)
+    if (error.response.status === 400) {
+      return alert('Dog breeds name already exists') //// Indica que ha habido un error en la creación
+  }
+  if (error.response.status === 404) {
+      return alert('Internal server error')
+  }
+  }
   }
 }
-};
+
 export const dogTemperament = (temp)=> {
   return {
   type: FILTER_TEMP,

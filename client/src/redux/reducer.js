@@ -36,14 +36,15 @@ const rootReducer = (state=initialState, action)=> {
      case GET_DOG_NAME:
      return {
       ...state,
-      dogs: action.payload.length,
-      
+      dogs: action.payload,
+      dogsFiltOrder: action.payload
      
      };
      case GET_DOG_ID:
      return {
       ...state,
       dogId: action.payload,
+      dogs: action.payload
 
      };
      case GET_TEMPERAMENTS:
@@ -55,6 +56,8 @@ const rootReducer = (state=initialState, action)=> {
      case POST_DOG:
       return {
         ...state,
+        dogs:[...state.dogs, action.payload],
+        dogsFiltOrder:[...state.dogs, action.payload],
         
       };
      case FILTER_TEMP:
